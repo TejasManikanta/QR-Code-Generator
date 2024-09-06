@@ -7,7 +7,7 @@
 body {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to right top, #1b1b1b, #2e2e2e); /* Darker gradient */
+  background: linear-gradient(to right top, #1b1b1b, #2e2e2e);
   display: flex;
   flex-direction: column;
   justify-content: center;
