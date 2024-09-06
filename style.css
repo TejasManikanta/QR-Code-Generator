@@ -47,26 +47,26 @@ h1 {
 }
 
 .main .input::placeholder {
-  color: #aaa; /* Muted placeholder color */
+  color: #aaa; 
 }
 
 .main .input:focus {
-  border: 2px solid #ff5722; /* Muted orange on focus */
+  border: 2px solid #ff5722; 
 }
 .main p {
-  font-size: 18px; /* Set a readable font size */
-  color: #e0e0e0; /* Light gray color for text */
-  text-align: center; /* Center the text */
-  margin-top: 15px; /* Space above the paragraph */
-  margin-bottom: 15px; /* Space below the paragraph */
-  padding: 5px; /* Add some padding for better spacing */
-  background: rgba(255, 255, 255, 0.05); /* Very subtle background */
-  border-radius: 5px; /* Rounded corners */
-  transition: background 0.3s; /* Smooth transition for background */
+  font-size: 18px; 
+  color: #e0e0e0; 
+  text-align: center; 
+  margin-top: 15px; 
+  margin-bottom: 15px; 
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px; 
+  transition: background 0.3s; 
 }
 
 .main p:hover {
-  background: rgba(255, 255, 255, 0.1); /* Slightly darker background on hover */
+  background: rgba(255, 255, 255, 0.1); 
 }
 
 .btn,
@@ -81,15 +81,15 @@ h1 {
   outline: none;
   border: none;
   border-radius: 5px;
-  background: #444; /* Dark button background */
-  color: #e0e0e0; /* Light gray text */
+  background: #444;
+  color: #e0e0e0; 
   transition: background 0.3s, transform 0.2s;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .main .btn:hover {
-  background: #555; /* Slightly lighter on hover */
-  transform: translateY(-2px); /* Lift effect */
+  background: #555; 
+  transform: translateY(-2px); 
 }
 
 .main .code {
@@ -101,13 +101,13 @@ h1 {
   bottom: 0;
   border-radius: 5px;
   padding: 10px 50px;
-  background: #07f49e; /* Muted teal for toast */
+  background: #07f49e; 
   opacity: 0;
   visibility: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
   transition: 0.3s;
   font-size: 20px;
-  color: #fff; /* White text for better contrast */
+  color: #fff; 
 }
 
 #toast.show {
