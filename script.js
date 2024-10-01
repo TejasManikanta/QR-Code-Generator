@@ -6,16 +6,20 @@ const toast = document.querySelector('#toast');
 btn.addEventListener('click', generate);
 
 function generate() {
-	const data = input.value;
-	const URL = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${data}`;
-	code.src = URL;
-
-	toastDiv();
+    const data = input.value.trim(); 
+    if (data === "") {
+        showToast("Please enter valid input"); 
+    } else {
+        const URL = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${data}`;
+        code.src = URL;
+        showToast("QR code successfully generated"); 
+    }
 }
 
-function toastDiv() {
-	toast.className = "show";
-	setTimeout(function() {
-		toast.className = toast.className.replace("show", "");
-	}, 2000)
+function showToast(message) {
+    toast.textContent = message; 
+    toast.className = "show";
+    setTimeout(function() {
+        toast.className = toast.className.replace("show", "");
+    }, 2000);
 }
